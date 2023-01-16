@@ -1,2 +1,0 @@
-flask
-language-tool-python==2.7.1
