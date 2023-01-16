@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-model-micro
+  namespace: model-microservice
+  labels:
+    app: prod
+    team: datascience
+    model: logistics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iris-model-micro
+  template:
+    metadata:
+      labels:
+        app: iris-model-micro
+    spec:
+     containers:
+      - name: iris-model-micro
+        image: worldbosskafka/iris-model-micro:v2

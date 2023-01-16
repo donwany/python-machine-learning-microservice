@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-configmap
+data:
+  INPUT_KAFKA_TOPIC: "input-topic"
+  OUTPUT_KAFKA_TOPIC: "output-topic"
+  BOOT_STRAP_SERVERS: "kafka-local.model-microservice.svc.cluster.local:9092"
+  AUTH_SVC_ADDRESS: "auth:5000"
+  SCHEMA_REGISTRY_URL: "http://schemaregistry.model-microservice.svc.cluster.local:8081"

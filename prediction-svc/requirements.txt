@@ -1,0 +1,6 @@
+Flask==2.1.2
+numpy==1.23.1
+scikit-learn==1.1.0
+sklearn==0.0
+kafka-python
+boto3

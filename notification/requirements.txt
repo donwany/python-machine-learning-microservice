@@ -1,0 +1,3 @@
+mailjet_rest
+Flask==2.0.2
+Jinja2==3.0.3
